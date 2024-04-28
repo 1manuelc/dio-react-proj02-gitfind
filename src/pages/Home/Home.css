@@ -1,0 +1,54 @@
+main {
+	height: 100%;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main__background {
+	height: 100%;
+	max-width: 100%;
+
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 10%;
+
+	opacity: 0.15;
+	filter: blur(0.4rem);
+}
+
+.main__content {
+	padding: 6rem 0;
+	width: 100%;
+
+	z-index: 1;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 0.6fr;
+	gap: 3.6rem;
+
+	color: #fff;
+}
+
+.main__search {
+	width: 100%;
+}
+
+ul.main__repositories li {
+	padding: 3.2rem 0;
+}
+
+ul.main__repositories li + li {
+	border-top: 0.1rem solid #e5e5e533;
+}
+
+@media (width <= 580px) {
+	.main__content {
+		grid-template-columns: 0.8fr;
+	}
+}

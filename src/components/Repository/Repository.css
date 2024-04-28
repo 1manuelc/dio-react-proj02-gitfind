@@ -1,0 +1,22 @@
+.repository__item {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	gap: 0.8rem;
+}
+
+.repository__item a {
+	font-size: 2rem;
+	color: #539bf5;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.repository__item a:hover {
+	text-decoration: underline;
+}
+
+.repository__item p {
+	font-size: 1.6rem;
+	color: #999;
+}
